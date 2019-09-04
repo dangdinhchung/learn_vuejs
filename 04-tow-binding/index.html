@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <style >
+        .demo{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+        .active{
+            background-color: yellow;
+        }
+        .error{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div :style="objStyle">
+            <h4>Tên: {{ name }}</h4>
+            <input v-model="name" type="text" placeholder="Enter Name ...">
+            <hr>
+            <button v-on:click="changeColor">Click</button>
+            <div class="demo" :class="objClass">
+            </div>
+            <hr>
+            <div :style="{ color: color , fontSize: fontsize + 'px'}">
+                Test Style css
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <button v-on:click="changeSelected('login')">Login</button>
+        <button v-on:click="changeSelected('register')">Register</button>
+        <div class="login" v-if="tabSelected === 'login'">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter name...">
+            </form>
+        </div>
+        <div class="register" v-else>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter email...">
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

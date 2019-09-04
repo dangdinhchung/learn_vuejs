@@ -1,0 +1,17 @@
+1) https://github.com/luutruonghailan/hoc-lap-trinh-online-zendvn/tree/master/khoa-hoc-lap-trinh-vuejs/01.Chuong01/ch01_fullsource
+2_ format number  : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat
+
+
+3) Computed va methods
+
+- Methods : +) So luong methods run khong duoc mong muon, chay bi thua
+            +) khi gọi hàm , KHi có sự thay đổi thì vuejs sẽ render lại template
+            +) sẽ tính toán k rành riêng cho data
+
+- Computed : +) lưu lại trong đối tượng vue, khi có sự thay đổi thì hàm mới chạy
+             +) Sẽ được tính toán dựa trên dữ liệu có sẵn đối tượng Vue - data
+
+4) v-if và v-show
+
+ - v-if: sẽ xóa dom html đi
+ - v-show: sẽ k xóa, chỉ là css display:none
